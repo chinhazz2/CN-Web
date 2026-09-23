@@ -15,7 +15,7 @@
 }
 body {
 	background: #fed58e url(../images/bg-body.png) repeat-x left top;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Georgia, "Segoe UI", Roboto, Arial, "Times New Roman", Times, serif;
 	margin: 0;
 }
 #background {
@@ -42,7 +42,7 @@ img {
 	background-position: -178px 0;
 	color: #fcfefc;
 	cursor: pointer;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: inherit;
 	font-size: 12px;
 	font-weight: bold;
 	height: 24px;
@@ -58,7 +58,7 @@ img {
 	background-position: 0 -32px;
 	display: block;
 	color: #fdf6ea;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: inherit;
 	font-size: 24px;
 	font-weight: bold;
 	height: 51px;
@@ -76,7 +76,7 @@ img {
 	height: 106px;
 	padding: 24px 0;
 	text-align: center;
-	position: relative
+	position: relative;
 }
 /** motto **/
 #motto {
@@ -111,7 +111,7 @@ a.sitename {
 }
 #searchbar form {
 	display: inline-block;
-*float: right; /** Needed for IE7 **/
+	*float: right;
 }
 #searchbar form input {
 	float: left;
@@ -121,7 +121,7 @@ a.sitename {
 #searchbar input.txtfield {
 	background-position: 0 0;
 	color: #c3baaf;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: inherit;
 	font-size: 12px;
 	font-style: italic;
 	height: 24px;
@@ -133,21 +133,21 @@ a.sitename {
 /*------------------------------ CONTENTS ------------------------------*/
 #contents {
 	background: url(../images/content-shadow.png) no-repeat right bottom;
-*display: inline-block; /** Needed for IE7 **/
+	*display: inline-block;
 }
 #contents:after {
-	clear:both;
-	content:"";
-	display:block;
-	height:0;
-	line-height:0;
-	visibility:hidden;
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
 }
 #contents h1 {
 	color: #7e501c;
 	font-size: 31px;
 	font-weight: normal;
-	margin: 0 0 30px;
+	margin: 0 0 20px;
 	text-align: justify;
 	text-shadow: 0 3px #fdf2be;
 }
@@ -168,7 +168,7 @@ a.sitename {
 	color: #300302;
 	font-size: 18px;
 	line-height: 24px;
-	margin: 0 0 0;
+	margin: 0;
 	text-transform: uppercase;
 }
 #contents h4 {
@@ -182,7 +182,7 @@ a.sitename {
 	font-size: 14px;
 	line-height: 24px;
 	margin: 0;
-	padding: 0 0 30px;
+	padding: 0 0 20px;
 	text-align: justify;
 }
 #contents p a {
@@ -270,7 +270,7 @@ a.sitename {
 	margin: 0 11px;
 }
 #gallery ul li:hover {
-	filter:alpha(opacity=80);
+	filter: alpha(opacity=80);
 	opacity: 0.8;
 }
 /** SIDEBAR **/
@@ -478,29 +478,32 @@ a.sitename {
 	text-align: center;
 }
 
-
 /*------------------------------ REGISTER PAGE ------------------------------*/
 #register-form {
 	margin: 0;
 	padding: 0;
 }
 #register-form fieldset {
-	border: 1px solid #b8b0a4;
-	margin: 0 0 10px;
-	padding: 10px 10px 8px;
+	border: 1px solid #c8bcae;
+	border-radius: 4px;
+	margin: 0 0 16px;
+	padding: 12px 15px 12px;
+	background-color: #faf5eb;
 }
 #register-form legend {
 	color: #300302;
 	font-size: 16px;
-	padding: 0 3px;
+	font-weight: bold;
+	padding: 0 6px;
 }
 #register-form .form-row {
 	margin: 0 0 14px;
 }
 #register-form label {
 	display: block;
-	color: #525252;
+	color: #444;
 	font-size: 14px;
+	font-weight: 600;
 	margin: 0 0 5px;
 }
 #register-form input[type="text"],
@@ -512,132 +515,107 @@ a.sitename {
 #register-form select,
 #register-form textarea {
 	box-sizing: border-box;
-	border: 1px solid #aaa;
+	border: 1px solid #b2a593;
+	border-radius: 3px;
 	background: #fff;
-	color: #555;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #333;
+	font-family: inherit;
 	font-size: 13px;
-	padding: 4px 5px;
+	padding: 5px 8px;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+#register-form input[type="text"]:focus,
+#register-form input[type="email"]:focus,
+#register-form input[type="password"]:focus,
+#register-form input[type="tel"]:focus,
+#register-form input[type="date"]:focus,
+#register-form input[type="number"]:focus,
+#register-form select:focus,
+#register-form textarea:focus {
+	border-color: #8b5a2b;
+	outline: none;
+	box-shadow: 0 0 3px rgba(139, 90, 43, 0.4);
 }
 #register-form input[type="text"],
 #register-form input[type="email"],
 #register-form input[type="password"],
 #register-form input[type="tel"] {
-	width: 180px;
-	height: 25px;
+	width: 260px;
+	height: 32px;
 }
 #register-form input[type="date"] {
 	width: 180px;
-	height: 27px;
+	height: 32px;
 }
 #register-form input[type="number"] {
-	width: 90px;
-	height: 25px;
+	width: 100px;
+	height: 32px;
 }
 #register-form select {
-	width: 150px;
-	height: 27px;
+	width: 180px;
+	height: 32px;
 }
 #register-form textarea {
-	width: 330px;
-	height: 78px;
+	width: 100%;
+	max-width: 450px;
+	height: 80px;
 	resize: vertical;
 }
 #register-form .choice-group {
-	color: #525252;
-	font-size: 13px;
+	color: #444;
+	font-size: 13.5px;
 }
 #register-form .choice-group label {
 	display: inline-block;
-	margin: 0 8px 0 0;
+	font-weight: normal;
+	margin: 0 12px 0 0;
+	cursor: pointer;
 }
 #register-form .choice-group input {
 	vertical-align: middle;
-	margin-right: 3px;
+	margin-right: 4px;
 }
 #register-form .terms {
-	color: #525252;
-	font-size: 13px;
-	margin: 2px 0 8px;
+	color: #444;
+	font-size: 13.5px;
+	margin: 10px 0 12px;
+}
+#register-form .terms label {
+	display: inline-block;
+	font-weight: normal;
+	cursor: pointer;
+}
+#register-form .terms input {
+	vertical-align: middle;
+	margin-right: 6px;
+}
+#register-form .form-actions {
+	margin-top: 15px;
 }
 #register-form .form-actions input {
 	background: #23852c;
 	border: 1px solid #1b6d22;
+	border-radius: 3px;
 	color: #fff;
 	cursor: pointer;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 12px;
+	font-family: inherit;
+	font-size: 13px;
 	font-weight: bold;
-	margin-right: 5px;
-	padding: 2px 8px;
+	margin-right: 8px;
+	padding: 6px 16px;
+	transition: background-color 0.2s;
 }
-#register-form .form-actions input:hover {
+#register-form .form-actions input[type="reset"] {
+	background: #8b3a3a;
+	border-color: #6d2828;
+}
+#register-form .form-actions input[type="submit"]:hover {
 	background: #176c1e;
+}
+#register-form .form-actions input[type="reset"]:hover {
+	background: #6d2828;
 }
 #register-form small {
 	color: #777;
 	font-size: 11px;
-}
-
-/*------------------------------ MEDIA PAGE ------------------------------*/
-#media-page .meta {
-	color: #525252;
-	font-size: 12px;
-	margin: 0 0 24px;
-}
-#media-page .meta a {
-	color: #525252;
-}
-#media-page .media-block {
-	margin: 0 0 22px;
-}
-#media-page .media-block h2 {
-	color: #300302;
-	font-size: 18px;
-	line-height: 28px;
-	margin: 0 0 10px;
-}
-#media-page figure {
-	margin: 0 0 18px;
-}
-#media-page figure img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-}
-#media-page figcaption {
-	color: #525252;
-	font-size: 12px;
-	line-height: 20px;
-	text-align: center;
-	margin-top: 4px;
-}
-#media-page .media-block p {
-	padding-bottom: 14px;
-}
-#media-page video,
-#media-page audio {
-	display: block;
-	width: 100%;
-	max-width: 606px;
-	margin: 0 auto 10px;
-}
-#media-page audio {
-	width: 100%;
-}
-#media-page .map-wrap {
-	width: 100%;
-	max-width: 606px;
-	margin: 0 auto;
-}
-#media-page iframe {
-	display: block;
-	width: 100%;
-	height: 300px;
-	border: 0;
-}
-#media-page .topic {
-	font-size: 13px;
-	padding-bottom: 0;
 }
