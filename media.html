@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ngày hội Công nghệ Xanh 2026 - Blakletterpress</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Nhúng Google Font Be Vietnam Pro xử lý triệt để lỗi phông Tiếng Việt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Ép làm mới Cache CSS với ?v=2 -->
+    <link rel="stylesheet" href="css/style.css?v=2" type="text/css">
 </head>
 <body>
     <div id="page">
-\t\t<header id="header">
-\t\t\t<div id="motto">
-\t\t\t\t<a href="index.html" class="sitename"><img src="images/blakletterpress.png" height="24" width="142" alt="SiteName"></a>
-\t\t\t\t<p><img src="images/header-text.png" height="14" width="218" alt="Text"></p>
-\t\t\t</div>
-\t\t\t<div id="logo">
-\t\t\t\t<a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
-\t\t\t</div>
-\t\t\t<div id="searchbar">
-\t\t\t\t<form action="#" method="post">
-\t\t\t\t\t<input type="text" value="Enter search query" class="txtfield" aria-label="Search query" onBlur="javascript:if(this.value==''){this.value=this.defaultValue;}" onFocus="javascript:if(this.value==this.defaultValue){this.value='';}">
-\t\t\t\t\t<input type="submit" value="Search" class="btn">
-\t\t\t\t</form>
-\t\t\t</div>
-\t\t</header>
+        <header id="header">
+            <div id="motto">
+                <a href="index.html" class="sitename"><img src="images/blakletterpress.png" height="24" width="142" alt="SiteName"></a>
+                <p><img src="images/header-text.png" height="14" width="218" alt="Text"></p>
+            </div>
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+            </div>
+            <div id="searchbar">
+                <form action="#" method="post">
+                    <input type="text" value="Enter search query" class="txtfield" aria-label="Search query" onBlur="javascript:if(this.value==''){this.value=this.defaultValue;}" onFocus="javascript:if(this.value==this.defaultValue){this.value='';}">
+                    <input type="submit" value="Search" class="btn">
+                </form>
+            </div>
+        </header>
+
         <div id="contents">
             <main id="main">
                 <article id="media-page" class="body">
@@ -43,19 +49,23 @@
 
                     <section class="media-block">
                         <h2>Video giới thiệu</h2>
-                        <video controls poster="images/team-large.jpg">
-                            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
-                            Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
-                        </video>
+                        <div class="video-wrap">
+                            <video controls poster="images/team-large.jpg">
+                                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                                Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+                            </video>
+                        </div>
                     </section>
 
                     <section class="media-block">
                         <h2>Podcast: Trò chuyện cùng diễn giả</h2>
                         <p>Nghe lại buổi phỏng vấn khách mời chính của chương trình:</p>
-                        <audio controls>
-                            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
-                            Trình duyệt của bạn không hỗ trợ thẻ audio HTML5.
-                        </audio>
+                        <div class="audio-wrap">
+                            <audio controls>
+                                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+                                Trình duyệt của bạn không hỗ trợ thẻ audio HTML5.
+                            </audio>
+                        </div>
                     </section>
 
                     <section class="media-block">
@@ -74,69 +84,65 @@
                     <section class="media-block">
                         <h2>Hình ảnh các mùa trước</h2>
                         <figure>
-                            <img src="images/ecofriends.jpg" alt="Khu trưng bày sản phẩm xanh mùa 2025" width="606">
+                            <img src="images/ecofriends.jpg" alt="Khu trưng bày sản phẩm xanh mùa 2025">
                             <figcaption>Khu trưng bày sản phẩm xanh mùa 2025.</figcaption>
                         </figure>
                         <p class="topic">Chủ đề: <u>công nghệ xanh, phát triển bền vững</u>.</p>
                     </section>
                 </article>
             </main>
-\t\t\t<aside id="sidebar">
-\t\t\t\t<nav id="navigation">
-\t\t\t\t\t<div>
-\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href="index.html">Home</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href="about.html">About</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href="news.html">News</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href="blog.html">Blog</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t</ul>
-\t\t\t\t\t</div>
-\t\t\t\t</nav>
-\t\t\t\t<div class="section">
-\t\t\t\t\t<div id="connect">
-\t\t\t\t\t\t<h2>Connect with us:</h2>
-\t\t\t\t\t\t<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class="section">
-\t\t\t\t\t<div id="posts">
-\t\t\t\t\t\t<h2>Placeholder</h2>
-\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<h5>Title Sample One</h5>
-\t\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
-\t\t\t\t\t\t\t\t<a href="news.html" class="more">Read more</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<h5>Title Sample One</h5>
-\t\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
-\t\t\t\t\t\t\t\t<a href="news.html" class="more">Read more</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t<a href="news.html" class="btn2">View More</a>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</aside>
+
+            <aside id="sidebar">
+                <nav id="navigation">
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="section">
+                    <div id="connect">
+                        <h2>Connect with us:</h2>
+                        <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a>
+                        <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a>
+                        <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+                    </div>
+                </div>
+                <div class="section">
+                    <div id="posts">
+                        <h2>Placeholder</h2>
+                        <ul>
+                            <li>
+                                <h5>Title Sample One</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
+                                <a href="news.html" class="more">Read more</a>
+                            </li>
+                            <li>
+                                <h5>Title Sample One</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
+                                <a href="news.html" class="more">Read more</a>
+                            </li>
+                        </ul>
+                        <a href="news.html" class="btn2">View More</a>
+                    </div>
+                </div>
+            </aside>
         </div>
-\t\t<footer id="footer">
-\t\t\t<div>
-\t\t\t\t<ul id="featured">
-\t\t\t\t\t<li><a href="index.html" class="home"></a><p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p></li>
-\t\t\t\t\t<li><a href="index.html" class="bell"></a><p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p></li>
-\t\t\t\t\t<li><a href="index.html" class="globe"></a><p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p></li>
-\t\t\t\t\t<li><a href="index.html" class="pencil"></a><p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p></li>
-\t\t\t\t</ul>
-\t\t\t\t<p id="footnote">© Copyright © 2011.Company name all rights reserved</p>
-\t\t\t</div>
-\t\t</footer>
+
+        <footer id="footer">
+            <div>
+                <ul id="featured">
+                    <li><a href="index.html" class="home"></a><p>This website template has been designed by Free Website Templates for you, for free.</p></li>
+                    <li><a href="index.html" class="bell"></a><p>This website template has been designed by Free Website Templates for you, for free.</p></li>
+                    <li><a href="index.html" class="globe"></a><p>This website template has been designed by Free Website Templates for you, for free.</p></li>
+                    <li><a href="index.html" class="pencil"></a><p>This website template has been designed by Free Website Templates for you, for free.</p></li>
+                </ul>
+                <p id="footnote">© Copyright © 2011. Company name all rights reserved</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
