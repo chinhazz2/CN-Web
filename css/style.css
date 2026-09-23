@@ -619,3 +619,20 @@ a.sitename {
 	color: #777;
 	font-size: 11px;
 }
+/* Ép toàn bộ trang và Form sử dụng phông chữ hiển thị tiếng Việt chuẩn */
+body, input, select, textarea, button, label, legend, h1, h2, h3, p {
+    font-family: "Segoe UI", Arial, Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+/* Tinh chỉnh riêng cho các ô nhập liệu */
+#register-form input[type="text"],
+#register-form input[type="email"],
+#register-form input[type="password"],
+#register-form input[type="tel"],
+#register-form input[type="date"],
+#register-form input[type="number"],
+#register-form select,
+#register-form textarea {
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    font-size: 14px;
+}
