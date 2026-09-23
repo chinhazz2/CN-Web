@@ -636,3 +636,57 @@ body, input, select, textarea, button, label, legend, h1, h2, h3, p {
     font-family: "Segoe UI", Arial, sans-serif !important;
     font-size: 14px;
 }
+/* Tối ưu hiển thị trang Media */
+.media-block {
+    margin-bottom: 24px;
+}
+
+.media-block figure {
+    margin: 0 0 12px 0;
+}
+
+.media-block img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.media-block figcaption {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    margin-top: 6px;
+}
+
+/* Tối ưu Video và Audio */
+.video-wrap video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.audio-wrap audio {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* Tối ưu khung Bản đồ Google Maps */
+.map-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /* Tỉ lệ 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.map-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
