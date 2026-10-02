@@ -1,0 +1,32 @@
+BÀI TẬP 1 — PHÂN TÍCH VÀ SỬA LỖI CSS
+
+Không thay đổi HTML. Chỉ sửa style-loi.css.
+
+1. Menu sticky không dính đúng và có thể bị hero che
+- Lỗi: .site-header có position: sticky nhưng thiếu top: 0 và z-index.
+- Sửa: top: 0; z-index: 100.
+
+2. Hero overlay không lấy hero làm mốc
+- Lỗi: .hero-overlay dùng position: absolute nhưng .hero không có position: relative.
+- Hậu quả: tiêu đề định vị theo containing block khác thay vì chính ảnh hero.
+- Sửa: position: relative cho .hero.
+
+3. Ảnh hero bị méo/không phủ đúng khung
+- Lỗi: width/height 100% nhưng thiếu object-fit: cover.
+- Sửa: object-fit: cover (và display: block).
+
+4. Ba card bị rớt hàng
+- Lỗi: flex-basis đã tính đúng 1/3, nhưng padding + border lại cộng thêm vì mặc định content-box.
+- Sửa: box-sizing: border-box toàn cục.
+
+5. Badge -20% không bám theo từng card
+- Lỗi: .badge absolute nhưng .card không tạo containing block.
+- Sửa: position: relative cho .card.
+
+6. Ảnh/card không nằm gọn
+- Lỗi: ảnh không bị giới hạn theo card; card đặt height: 300px cố định nên nội dung dài có thể tràn.
+- Sửa: ảnh width: 100%, height: 180px, object-fit: cover; đổi height thành min-height.
+
+7. Nút ↑ nằm góc trên thay vì góc dưới
+- Lỗi: top: 24px.
+- Sửa: bottom: 24px.
